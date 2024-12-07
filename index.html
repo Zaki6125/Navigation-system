@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precise Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Knowledge Stream Navigation System</h1>
+    <div id="map">
+        <!-- First Floor -->
+        <div class="location" id="chanab" style="top: 50px; left: 50px;">Chanab</div>
+        <div class="location" id="raviLounch" style="top: 150px; left: 50px;">Ravi Lounch</div>
+        <div class="location" id="dashat" style="top: 250px; left: 50px;">Dashat</div>
+        <div class="location" id="controllerRoom" style="top: 50px; left: 450px;">Controller Room</div>
+        <div class="location" id="washroom" style="top: 150px; left: 450px;">Washroom</div>
+        <div class="location" id="sindh" style="top: 250px; left: 450px;">Sindh</div>
+        <div class="stairs" id="stairs1" style="top: 400px; left: 275px;">Stairs</div>
+        <div class="location" id="reception" style="top: 400px; left: 150px;">Reception</div>
+        <div class="location" id="office" style="top: 400px; left: 450px;">Office</div>
+
+        <!-- Second Floor -->
+        <div class="location" data-floor="floor2" id="lahore" style="top: 50px; left: 50px;">Lahore</div>
+        <div class="location" data-floor="floor2" id="multan" style="top: 150px; left: 50px;">Multan</div>
+        <div class="location" data-floor="floor2" id="karachi" style="top: 250px; left: 50px;">Karachi</div>
+        <div class="location" data-floor="floor2" id="pindi" style="top: 50px; left: 450px;">Pindi</div>
+        <div class="location" data-floor="floor2" id="kn" style="top: 150px; left: 450px;">KN</div>
+        <div class="location" data-floor="floor2" id="kasur" style="top: 250px; left: 450px;">Kasur</div>
+        <div class="stairs" data-floor="floor2" id="stairs2" style="top: 400px; left: 275px;">Stairs</div>
+    </div>
+
+    <select id="destination">
+        <option value="chanab">Chanab</option>
+        <option value="raviLounch">Ravi Lounch</option>
+        <option value="dashat">Dashat</option>
+        <option value="controllerRoom">Controller Room</option>
+        <option value="washroom">Washroom</option>
+        <option value="sindh">Sindh</option>
+        <option value="reception">Reception</option>
+        <option value="office">Office</option>
+        <!-- Second Floor Options -->
+        <option value="lahore">Lahore</option>
+        <option value="multan">Multan</option>
+        <option value="karachi">Karachi</option>
+        <option value="pindi">Pindi</option>
+        <option value="kn">KN</option>
+        <option value="kasur">Kasur</option>
+    </select>
+    <button onclick="navigate()">Navigate</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
